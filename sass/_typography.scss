@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 16px;
+}
+
+.heading {
+  font-family: "Overpass", sans-serif;
+
+  &--1 {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -4%;
+
+    @include media(">=phone", "<tablet") {
+      font-size: 30px;
+      letter-spacing: -2%;
+    }
+  }
+
+  &--2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -4%;
+
+    @include media(">=phone", "<tablet") {
+      font-size: 36px;
+      letter-spacing: -5%;
+    }
+  }
+
+  &--3 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -4%;
+
+    @include media(">=phone", "<tablet") {
+      font-size: 24px;
+      letter-spacing: 0%;
+    }
+  }
+}
+
+.paragraph {
+  font-family: "Overpass", sans-serif;
+
+  &--1 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0%;
+
+    @include media(">=phone", "<tablet") {
+      font-size: 18px;
+      letter-spacing: -6%;
+    }
+  }
+
+  &--2 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 3%;
+
+    @include media(">=phone", "<tablet") {
+      font-size: 14px;
+      letter-spacing: 3%;
+    }
+  }
+}
