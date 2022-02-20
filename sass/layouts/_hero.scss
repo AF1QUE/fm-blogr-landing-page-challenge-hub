@@ -1,0 +1,21 @@
+.hero {
+  background-image: url("/images/hero-bg.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  border-end-start-radius: 100px;
+  @include flex(column, center, center);
+
+  .container {
+    @include flex(column, center, center);
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__desc {
+    color: #fff;
+  }
+}

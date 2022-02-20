@@ -12,7 +12,8 @@ body {
   &--1 {
     font-size: 64px;
     font-weight: 600;
-    letter-spacing: -4%;
+    letter-spacing: -1.92px;
+    line-height: 98.05px;
 
     @include media(">=phone", "<tablet") {
       font-size: 30px;
@@ -32,7 +33,7 @@ body {
   }
 
   &--3 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     letter-spacing: -4%;
 
@@ -49,6 +50,7 @@ body {
   &--1 {
     font-size: 20px;
     font-weight: 300;
+    line-height: 30.64px;
     letter-spacing: 0%;
 
     @include media(">=phone", "<tablet") {
@@ -60,7 +62,8 @@ body {
   &--2 {
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 3%;
+    line-height: 28px;
+    letter-spacing: 0.5px;
 
     @include media(">=phone", "<tablet") {
       font-size: 14px;
