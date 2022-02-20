@@ -5,21 +5,51 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
   @include flex(column, center, center);
+
+  @include media(">=phone", "<tablet") {
+    background: url("/images/c2a-bg-mobile.svg");
+    height: 625px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .c2a__img {
+    @include media(">=phone", "<tablet") {
+      width: 325px;
+      margin-top: -250px;
+    }
+  }
 
   .container {
     @include flex(row, space-between, center);
+
+    @include media(">=phone", "<tablet") {
+      @include flex(column);
+    }
   }
 
   &__group {
     width: 560px;
+
+    @include media(">=phone", "<tablet") {
+      width: 100%;
+    }
   }
 
   &__title {
     color: #fff;
+    @include media(">=phone", "<tablet") {
+      text-align: center;
+    }
   }
 
   &__desc {
     color: #fff;
+    @include media(">=phone", "<tablet") {
+      text-align: center;
+    }
   }
 }

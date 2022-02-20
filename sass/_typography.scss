@@ -28,7 +28,7 @@ body {
     letter-spacing: -4%;
 
     @include media(">=phone", "<tablet") {
-      font-size: 36px;
+      font-size: 40px;
       letter-spacing: -5%;
     }
   }
@@ -67,7 +67,7 @@ body {
     letter-spacing: 0.5px;
 
     @include media(">=phone", "<tablet") {
-      font-size: 14px;
+      font-size: 16px;
       letter-spacing: 3%;
     }
   }
