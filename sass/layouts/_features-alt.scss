@@ -24,12 +24,14 @@
     }
 
     &__title {
+      color: $veryDarkBlue;
       @include media(">=phone", "<tablet") {
         text-align: center;
       }
     }
 
     &__desc {
+      color: $veryDarkGrayishBlue;
       @include media(">=phone", "<tablet") {
         text-align: center;
       }

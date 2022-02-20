@@ -2,6 +2,7 @@
   .section__title {
     text-align: center;
     margin-bottom: -100px;
+    color: $veryDarkBlue;
 
     @include media(">=phone", "<tablet") {
       font-size: 28px; // only for mobile devices
@@ -36,6 +37,7 @@
     }
 
     &__title {
+      color: $veryDarkBlue;
       @include media(">=phone", "<tablet") {
         text-align: center;
         width: 275px;
@@ -43,6 +45,7 @@
     }
 
     &__desc {
+      color: $veryDarkGrayishBlue;
       @include media(">=phone", "<tablet") {
         text-align: center;
       }
