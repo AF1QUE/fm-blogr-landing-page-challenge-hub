@@ -1,0 +1,19 @@
+.features--alt {
+  .section__title {
+    text-align: center;
+    margin-bottom: -100px;
+  }
+
+  .section__content {
+    @include flex(row, space-between, center);
+    margin-left: calc(-67vw + 45%);
+  }
+
+  .features__img {
+    width: 65%;
+  }
+
+  .feature {
+    width: 540px;
+  }
+}

@@ -1,0 +1,25 @@
+.c2a {
+  background: url("/images/c2a-bg.svg");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include flex(column, center, center);
+
+  .container {
+    @include flex(row, space-between, center);
+  }
+
+  &__group {
+    width: 560px;
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__desc {
+    color: #fff;
+  }
+}
