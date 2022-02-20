@@ -1,19 +1,38 @@
 .features--alt {
-  .section__title {
-    text-align: center;
-    margin-bottom: -100px;
-  }
-
   .section__content {
     @include flex(row, space-between, center);
     margin-left: calc(-66vw + 45%);
+
+    @include media(">=phone", "<tablet") {
+      margin-left: auto;
+      @include flex(column, center);
+    }
   }
 
   .features__img {
     width: 65%;
+    @include media(">=phone", "<tablet") {
+      width: 100%;
+    }
   }
 
   .feature {
     width: 540px;
+
+    @include media(">=phone", "<tablet") {
+      width: 100%;
+    }
+
+    &__title {
+      @include media(">=phone", "<tablet") {
+        text-align: center;
+      }
+    }
+
+    &__desc {
+      @include media(">=phone", "<tablet") {
+        text-align: center;
+      }
+    }
   }
 }
