@@ -37,14 +37,30 @@ $spaceamounts: (
 ); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
 
-@each $space in $spaceamounts {
-  @each $side in $sides {
-    .m-#{str-slice($side, 0, 1)}-#{$space} {
-      margin-#{$side}: #{$space}px !important;
-    }
+@include media(">1024px") {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      .m-#{str-slice($side, 0, 1)}-#{$space} {
+        margin-#{$side}: #{$space}px !important;
+      }
 
-    .p-#{str-slice($side, 0, 1)}-#{$space} {
-      padding-#{$side}: #{$space}px !important;
+      .p-#{str-slice($side, 0, 1)}-#{$space} {
+        padding-#{$side}: #{$space}px !important;
+      }
+    }
+  }
+}
+
+@include media(">=phone", "<tablet") {
+  @each $space in $spaceamounts {
+    @each $side in $sides {
+      .m-#{str-slice($side, 0, 1)}-#{$space}--sm {
+        margin-#{$side}: #{$space}px !important;
+      }
+
+      .p-#{str-slice($side, 0, 1)}-#{$space}--sm {
+        padding-#{$side}: #{$space}px !important;
+      }
     }
   }
 }

@@ -4,8 +4,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-  border-end-start-radius: 100px;
+  border-bottom-left-radius: 100px;
   @include flex(column, center, center);
+  @include media(">=phone", "<tablet") {
+    background-image: url("/images/hero-bg-mobile.svg");
+  }
 
   .container {
     @include flex(column, center, center);
@@ -13,9 +16,22 @@
 
   &__title {
     color: #fff;
+
+    @include media(">=phone", "<tablet") {
+      text-align: center;
+      max-width: 300px;
+    }
   }
 
   &__desc {
     color: #fff;
+
+    @include media(">=phone", "<tablet") {
+      text-align: center;
+    }
+  }
+
+  .btn__group {
+    @include flex(row, space-between, center);
   }
 }

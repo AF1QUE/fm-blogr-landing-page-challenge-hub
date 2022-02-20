@@ -14,12 +14,14 @@
   }
 
   &--primary {
-    background-color: $lightRed;
+    background-color: $white;
+    color: $lightRed;
     border: 1px solid $lightRed;
 
     &:hover {
-      background-color: lighten($lightRed, $amount: 15);
-      border-color: lighten($lightRed, $amount: 15);
+      color: white;
+      background-color: lighten($lightRed, $amount: 20);
+      border-color: lighten($lightRed, $amount: 20);
     }
   }
 

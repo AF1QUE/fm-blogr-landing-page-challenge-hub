@@ -16,7 +16,8 @@ body {
     line-height: 98.05px;
 
     @include media(">=phone", "<tablet") {
-      font-size: 30px;
+      font-size: 36px;
+      line-height: 55.15px;
       letter-spacing: -2%;
     }
   }

@@ -1,8 +1,10 @@
 @import "include-media";
+@import "colors";
 @import "typography";
 @import "functions";
 @import "base";
 @import "components";
+@import "utilities";
 
 // LAYOUTS
 
@@ -12,4 +14,3 @@
 @import "layouts/c2a";
 @import "layouts/features-alt";
 @import "layouts/footer";
-@import "layouts/utilities";
