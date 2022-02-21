@@ -5,30 +5,30 @@
   .container {
     @include flex(row, space-between, center);
   }
-}
 
-.nav__items {
-  &--primary {
-    @include flex(row, flex-start, center);
-  }
-}
-
-.nav__item {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-
-  &:nth-child(1) {
-    a {
-      color: #fff;
+  .nav__items {
+    &--primary {
+      @include flex(row, flex-start, center);
     }
   }
-}
 
-.dropdown {
-  color: #fff;
+  .nav__item {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
 
-  &__items {
-    display: none;
+    &:nth-child(1) {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .dropdown {
+    color: #fff;
+
+    &__items {
+      display: none;
+    }
   }
 }
