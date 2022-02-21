@@ -6,6 +6,11 @@
     @include flex(row, space-between, center);
   }
 
+  .fas {
+    font-size: 10px;
+    transition: all 0.3s ease-out;
+  }
+
   .nav__items {
     &--primary {
       @include flex(row, flex-start, center);
@@ -22,6 +27,17 @@
         color: #fff;
       }
     }
+
+    &:hover {
+      .fas {
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+      }
+
+      .dropdown__items {
+        display: block;
+      }
+    }
   }
 
   .dropdown {
@@ -29,6 +45,25 @@
 
     &__items {
       display: none;
+      position: absolute;
+      padding: 40px 30px;
+      border-radius: 5px;
+      background-color: #fff;
+      transform: translateX(-25px);
+      min-width: 100px;
+    }
+
+    &__item {
+      font-size: 15px;
+      font-weight: 400;
+
+      a {
+        color: #000000;
+      }
+
+      &:hover {
+        font-weight: 700;
+      }
     }
   }
 }

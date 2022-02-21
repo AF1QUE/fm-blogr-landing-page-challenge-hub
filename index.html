@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Blogr | Frontend Mentor</title>
 
+  <!-- Fontawesome Integration -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -19,32 +24,35 @@
       <ul class="nav__items nav__items--primary">
         <img src="images/logo.svg" alt="logo" class="hero__logo m-r-65">
         <li class="nav__item">
-          <a href="#" class="dropdown hover-underline-animation">Pricing</a>
-          <ul class="dropdown__items">
-            <li class="dropdown__item m-b-10"><a href="#">Overview</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Pricing</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Marketplace</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Features</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Integrations</a></li>
+          <a href="#" class="dropdown hover-underline-animation">Pricing<i
+              class="fas fa-solid fa-chevron-down m-l-5"></i></a>
+          <ul class="dropdown__items m-t-10">
+            <li class="dropdown__item m-b-15"><a href="#">Overview</a></li>
+            <li class="dropdown__item m-b-15"><a href="#">Pricing</a></li>
+            <li class="dropdown__item m-b-15"><a href="#">Marketplace</a></li>
+            <li class="dropdown__item m-b-15"><a href="#">Features</a></li>
+            <li class="dropdown__item"><a href="#">Integrations</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item m-r-30 m-l-30">
+          <a href="#" class="dropdown hover-underline-animation">Company<i
+              class="fas fa-solid fa-chevron-down m-l-5"></i></a>
+          <ul class="dropdown__items m-t-10">
+            <li class="dropdown__item m-b-15"><a href="#">About</a></li>
+            <li class="dropdown__item m-b-15"><a href="#">Team</a></li>
+            <li class="dropdown__item m-b-15"><a href="#">Blog</a></li>
+            <li class="dropdown__item"><a href="#">Careers</a></li>
           </ul>
         </li>
 
         <li class="nav__item">
-          <a href="#" class="dropdown hover-underline-animation m-r-30 m-l-30">Company</a>
-          <ul class="dropdown__items">
-            <li class="dropdown__item m-b-10"><a href="#">About</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Team</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Blog</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Careers</a></li>
-          </ul>
-        </li>
-
-        <li class="nav__item">
-          <a href="#" class="dropdown hover-underline-animation">Connect</a>
-          <ul class="dropdown__items">
-            <li class="dropdown__item m-b-10"><a href="#">Contact</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">Newsletter</a></li>
-            <li class="dropdown__item m-b-10"><a href="#">LinkedIn</a></li>
+          <a href="#" class="dropdown hover-underline-animation">Connect<i
+              class="fas fa-solid fa-chevron-down m-l-5"></i></a>
+          <ul class="dropdown__items m-t-10">
+            <li class="dropdown__item m-b-15"><a href="#">Contact</a></li>
+            <li class="dropdown__item m-b-15"><a href="#">Newsletter</a></li>
+            <li class="dropdown__item"><a href="#">LinkedIn</a></li>
           </ul>
         </li>
 
