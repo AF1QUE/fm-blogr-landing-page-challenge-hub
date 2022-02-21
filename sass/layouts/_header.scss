@@ -1,3 +1,9 @@
+@include media(">=phone", "<tablet") {
+  .header {
+    display: none;
+  }
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -9,6 +15,13 @@
   .fas {
     font-size: 10px;
     transition: all 0.3s ease-out;
+  }
+
+  .hoverable::after {
+    content: " ";
+    height: 10px;
+    width: 100%;
+    display: block;
   }
 
   .nav__items {
@@ -51,6 +64,8 @@
       background-color: #fff;
       transform: translateX(-25px);
       min-width: 100px;
+
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
     }
 
     &__item {

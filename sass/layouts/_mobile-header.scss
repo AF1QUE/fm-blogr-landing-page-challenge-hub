@@ -1,0 +1,23 @@
+@include media(">tablet") {
+  .mobile-header {
+    display: none;
+  }
+}
+
+.mobile-header {
+  position: absolute;
+  width: 100%;
+
+  .container {
+    @include flex(column, space-between, center);
+  }
+
+  .nav__bar {
+    width: 100%;
+    @include flex(row, space-between, center);
+  }
+
+  .nav__block {
+    display: none;
+  }
+}
