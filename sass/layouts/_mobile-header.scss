@@ -28,6 +28,11 @@
     }
   }
 
+  .nav {
+    width: 100%;
+    display: none;
+  }
+
   .nav__block {
     background-color: #fff;
     width: 100%;
@@ -48,10 +53,22 @@
     font-weight: 600;
   }
 
+  .active--inner {
+    display: block !important;
+  }
+
   .dropdown__items {
-    // display: none;
+    display: none;
     padding: 25px 0px;
     border-radius: 10px;
     background-color: #eeeef0;
+  }
+
+  .active {
+    color: $veryDarkBlackBlue;
+
+    .fas {
+      transform: rotate(180deg);
+    }
   }
 }
