@@ -37,6 +37,8 @@
   }
 
   &--gradient {
+    color: #fff !important;
+    display: inline-block;
     background-image: linear-gradient(left, $veryLightRed, $lightRed);
   }
 }

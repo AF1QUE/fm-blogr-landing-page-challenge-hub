@@ -14,8 +14,5 @@ navIcon.addEventListener("click", () => {
     navBlock.style.display = "none";
     flag++;
   }
-
   console.log(flag);
 });
-
-//
