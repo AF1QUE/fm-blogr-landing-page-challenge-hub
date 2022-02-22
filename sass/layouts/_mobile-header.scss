@@ -51,6 +51,7 @@
   .dropdown {
     font-size: 18px;
     font-weight: 600;
+    margin-left: 10px;
   }
 
   .active--inner {
@@ -70,5 +71,16 @@
     .fas {
       transform: rotate(180deg);
     }
+  }
+
+  @include media(">=phone", "<tablet") {
+    .sign-up,
+    .login {
+      a {
+        font-size: 18px !important;
+      }
+    }
+
+
   }
 }

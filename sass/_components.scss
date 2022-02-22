@@ -11,7 +11,7 @@
   text-align: center;
 
   @include media(">=phone", "<tablet") {
-    font-size: 14px;
+    font-size: 16px;
     display: block;
   }
 
